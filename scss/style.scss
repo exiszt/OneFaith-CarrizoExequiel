@@ -1,0 +1,140 @@
+/*SCSS*/
+
+@import '../scss/base/estilosGenerales';
+/*@import '../scss/components/header';*/
+/*@import '../scss/components/footer';*/
+@import '../scss/base/variables';
+@import '../scss/base/lista';
+
+.contenedor-general {
+    margin-top: 50px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: nth($colores, 3);
+    transition: $transicion;
+    font-weight: 600;
+
+    &:hover {
+        color: nth($colores, 2);
+    }
+}
+
+.enlace-nav {
+    color: nth($colores, 3) !important;
+    transition: $transicion;
+
+    &:hover {
+        color: nth($colores, 2) !important;
+    }
+}
+
+.espacio {
+    margin: 300px, 0;
+}
+
+.estilo-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.icono {
+    background-color: nth($colores, 3);
+    transition: $transicion;
+    margin: 5px 5px 5px 5px;
+
+    &:hover {
+        background-color: nth($colores, 2);
+    }
+}
+
+.navegador {
+    background-color: nth($colores, 1);
+}
+
+.navegador-logo {
+    font-weight: 900;
+    transition: $transicion;
+
+    &:hover {
+        color: nth($colores, 2) !important;
+    }
+}
+
+.parrafo {
+    color: nth($colores, 4);
+    font-size: nth($tm-fuente, 3);
+    font-weight: 400;
+}
+
+.pie {
+    position: absolute;
+    padding: 70px;
+    background-color: nth($colores, 1);
+}
+
+.titulo1 {
+    color: nth($colores, 2);
+    font-size: nth($tm-fuente, 1);
+    font-weight: 600;
+}
+
+.titulo2 {
+    color: nth($colores, 2);
+    font-size: nth($tm-fuente, 2);
+    font-weight: 600;
+}
+
+/** MOBILE **/
+@media (max-width: 576px){
+    .navegador-logo{
+        margin-left: 3%;
+    }
+
+    .contenedor-flex{
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo1{
+        text-align: center;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .parrafo{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .enlace{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/** TABLET **/
+@media (min-width: 576px) and (max-width: 992px){
+
+    .navegador-logo{
+        margin-left: 3%;
+    }
+
+    .titulo1{
+        text-align: center;
+        margin: 10px 0;
+        font-size: 25px;
+    }
+
+    .parrafo{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .enlace{
+        display: flex;
+        justify-content: center;
+    }
+}

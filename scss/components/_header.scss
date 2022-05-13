@@ -1,0 +1,26 @@
+@import '../base/variables';
+@import '../base/lista';
+
+/*HEADER*/
+
+header {
+    .navegador{
+        background-color: nth($colores,1);
+    }
+
+    .navegador-logo{
+        font-weight: 900;
+        transition: $transicion;
+        &:hover{
+            color: nth($colores, 2) !important;
+        }
+    }
+
+    .enlace-nav{
+        color: nth($colores, 3) !important;
+        transition: $transicion;
+        &:hover{
+            color: nth($colores, 2) !important;
+        }
+    }
+}
