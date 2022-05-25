@@ -1,0 +1,68 @@
+@import '../base/estilosGenerales';
+@import '../base/extends';
+@import '../base/lista';
+@import '../base/mapas';
+@import '../base/mixins';
+@import '../base/variables';
+@import '../components/header';
+
+body {
+    background-color: nth($colores, 5);
+
+    .main-quecreemos {
+        .contenedor-quecreemos {
+            margin-top: 80px;
+
+            .espacio {
+                @include margen(20px, 20px);
+
+                .titulo0 {
+                    @include texto(600, 30px, white);
+
+                }
+
+                .contenedor-doctrina {
+                    @include margen(5px, 5px);
+                    @extend %flex;
+
+                    .caja-doctrina {
+                        background-color: nth($colores, 1);
+
+                        .card-body {
+                            .titulo-doctrina {
+                                @include texto(600, 20px, white);
+                            }
+
+                            .keyword {
+                                @extend %palabra-descripcion;
+                            }
+                        }
+                    }
+
+                }
+
+                .parrafo {
+                    @include texto(400, 16px, white)
+                }
+
+                @media (max-width: 576px) {
+                    .parrafo {
+                        @include texto(400, 18px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
+
+                .enlace {
+                    @extend %enlace;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .espacio {
+                    @include margen(5px, 5px);
+                }
+            }
+        }
+    }
+}

@@ -1,26 +1,45 @@
-@import '../base/variables';
+@import '../base/extends';
 @import '../base/lista';
+@import '../base/mapas';
+@import '../base/mixins';
+@import '../base/variables';
 
 /*HEADER*/
 
 header {
-    .navegador{
-        background-color: nth($colores,1);
-    }
+    .navegador {
+        background-color: nth($colores, 1);
 
-    .navegador-logo{
-        font-weight: 900;
-        transition: $transicion;
-        &:hover{
-            color: nth($colores, 2) !important;
-        }
-    }
 
-    .enlace-nav{
-        color: nth($colores, 3) !important;
-        transition: $transicion;
-        &:hover{
-            color: nth($colores, 2) !important;
+        .container {
+            .navegador-logo {
+                font-weight: 900;
+                transition: $transicion;
+
+                &:hover {
+                    color: nth($colores, 2) !important;
+                }
+            }
+            button{
+                span{
+
+                }
+            }
+            .div-navegador{
+                ul{
+                    li{
+                        .enlace-nav{
+                            color: nth($colores, 3);
+                            transition: $transicion;
+                            &:hover{
+                                color: nth($colores,2) !important;
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
+
     }
 }

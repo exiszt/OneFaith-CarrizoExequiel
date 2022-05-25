@@ -1,0 +1,79 @@
+@import '../base/estilosGenerales';
+@import '../base/extends';
+@import '../base/lista';
+@import '../base/mapas';
+@import '../base/mixins';
+@import '../base/variables';
+@import '../components/header';
+
+body {
+    background-color: nth($colores, 5);
+
+    .main-contacto {
+        .contenedor-contacto {
+            margin-top: 80px;
+
+            .espacio {
+                @include margen(20px, 20px);
+
+                .titulo0 {
+                    @include texto(600, 30px, nth($colores, 4));
+
+                }
+
+                .parrafo {
+                    @include texto(400, 16px, nth($colores, 4))
+                }
+
+                @media (max-width: 576px) {
+                    .parrafo {
+                        @include texto(400, 18px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
+
+                .formulario {
+                    .campo {
+                        @include texto(400, 18px, nth($colores, 4));
+                    }
+
+                    @media (max-width: 576px) {
+                        .campo {
+                            @include display-mobile (flex, center, 100%);
+                        }
+                    }
+
+                    .aclaracion {
+                        @include texto(400, 15px, nth($colores, 3));
+                    }
+
+                    @media (max-width: 576px) {
+                        .aclaracion {
+                            @include display-mobile (flex, center, 100%);
+                        }
+                    }
+
+                    .boton-enviar {
+                        background-color: nth($colores, 3);
+                        color: nth($colores, 4);
+                        transition: $transicion;
+                        @include texto(600, 15px, nth($colores, 4));
+                        @include margen(10px, 0px);
+
+                        &:hover {
+                            background-color: nth($colores, 2);
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        .boton-enviar {
+                            background-color: nth($colores, 2);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

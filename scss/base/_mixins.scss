@@ -1,0 +1,18 @@
+/*MIXINS*/
+
+@mixin margen ($arriba, $abajo){
+    margin-top: $arriba;
+    margin-bottom: $abajo;
+}
+
+@mixin texto ($txt-ancho, $txt-tam, $txt-color){
+    font-weight: $txt-ancho;
+    font-size: $txt-tam;
+    color: $txt-color;
+}
+
+@mixin display-mobile ($ver, $justificar, $ancho){
+    display: $ver;
+    justify-content: $justificar;
+    width: $ancho;
+}

@@ -1,140 +1,69 @@
 /*SCSS*/
 
 @import '../scss/base/estilosGenerales';
-/*@import '../scss/components/header';*/
-/*@import '../scss/components/footer';*/
+@import '../scss/components/header';
+@import '../scss/components/footer';
 @import '../scss/base/variables';
 @import '../scss/base/lista';
+@import '../scss/base/extends';
+@import '../scss/base/mixins';
+@import '../scss/components/nosotros';
+@import '../scss/components/queCreemos';
+@import '../scss/components/media';
+@import '../scss/components/contacto';
 
-.contenedor-general {
-    margin-top: 50px;
-}
+body {
+    background-color: nth($colores, 5);
 
-.enlace {
-    text-decoration: none;
-    color: nth($colores, 3);
-    transition: $transicion;
-    font-weight: 600;
+    .main-index {
+        .contenedor-index {
+            margin-top: 60px;
 
-    &:hover {
-        color: nth($colores, 2);
-    }
-}
+            .espacio {
+                @include margen(20px, 20px);
 
-.enlace-nav {
-    color: nth($colores, 3) !important;
-    transition: $transicion;
+                @media (max-width: 576px) {
+                    .contenedor-flex {
+                        @include display-mobile(flex, center, 100%);
+                    }
+                }
 
-    &:hover {
-        color: nth($colores, 2) !important;
-    }
-}
+                .titulo1 {
+                    @include texto(600, 25px, white);
 
-.espacio {
-    margin: 300px, 0;
-}
+                }
 
-.estilo-ul {
-    list-style: none;
-    padding: 0;
-}
+                @media (max-width: 576px) {
+                    .titulo1 {
+                        @include texto(600, 24px, nth($colores, 4));
+                        @include display-mobile(flex, center, 100%);
+                        @include margen(10px, 10px);
+                    }
+                }
 
-.icono {
-    background-color: nth($colores, 3);
-    transition: $transicion;
-    margin: 5px 5px 5px 5px;
+                .parrafo {
+                    @include texto(400, 16px, nth($colores, 4))
+                }
 
-    &:hover {
-        background-color: nth($colores, 2);
-    }
-}
+                @media (max-width: 576px) {
+                    .parrafo {
+                        @include texto(400, 18px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
 
-.navegador {
-    background-color: nth($colores, 1);
-}
+                .enlace {
+                    @extend %enlace;
+                }
 
-.navegador-logo {
-    font-weight: 900;
-    transition: $transicion;
-
-    &:hover {
-        color: nth($colores, 2) !important;
-    }
-}
-
-.parrafo {
-    color: nth($colores, 4);
-    font-size: nth($tm-fuente, 3);
-    font-weight: 400;
-}
-
-.pie {
-    position: absolute;
-    padding: 70px;
-    background-color: nth($colores, 1);
-}
-
-.titulo1 {
-    color: nth($colores, 2);
-    font-size: nth($tm-fuente, 1);
-    font-weight: 600;
-}
-
-.titulo2 {
-    color: nth($colores, 2);
-    font-size: nth($tm-fuente, 2);
-    font-weight: 600;
-}
-
-/** MOBILE **/
-@media (max-width: 576px){
-    .navegador-logo{
-        margin-left: 3%;
-    }
-
-    .contenedor-flex{
-        display: flex;
-        justify-content: center;
-    }
-
-    .titulo1{
-        text-align: center;
-        margin: 10px 0;
-        font-size: 20px;
-    }
-
-    .parrafo{
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .enlace{
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-/** TABLET **/
-@media (min-width: 576px) and (max-width: 992px){
-
-    .navegador-logo{
-        margin-left: 3%;
-    }
-
-    .titulo1{
-        text-align: center;
-        margin: 10px 0;
-        font-size: 25px;
-    }
-
-    .parrafo{
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .enlace{
-        display: flex;
-        justify-content: center;
+                @media (max-width: 576px) {
+                    .enlace {
+                        @include display-mobile(flex, center, 100%);
+                        @include texto(600, 18px, nth($colores, 2));
+                    }
+                }
+            }
+        }
     }
 }

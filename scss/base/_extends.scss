@@ -1,0 +1,23 @@
+/*EXTENDS*/
+
+%flex{
+    display: flex;
+    justify-content: center;
+}
+
+%palabra-descripcion{
+    background-color: #23A9E0;
+    color: white;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+
+%enlace{
+    text-decoration: none;
+    color: #8E8E8E;
+    &:hover{
+        color: #23A9E0;
+    }
+}

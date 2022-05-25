@@ -6,133 +6,746 @@
   font-family: "Outfit", sans-serif;
   color: white;
   max-width: 100%;
+  list-style: none;
 }
 
-/*@import '../scss/components/header';*/
-/*@import '../scss/components/footer';*/
-.contenedor-general {
-  margin-top: 50px;
+/*EXTENDS*/
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+  display: flex;
+  justify-content: center;
 }
 
-.enlace {
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
   text-decoration: none;
   color: #8E8E8E;
-  transition: all 0.3s linear;
-  font-weight: 600;
 }
-.enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
   color: #23A9E0;
 }
 
-.enlace-nav {
-  color: #8E8E8E !important;
-  transition: all 0.3s linear;
-}
-.enlace-nav:hover {
-  color: #23A9E0 !important;
-}
-
-.espacio {
-  margin: 300px, 0;
-}
-
-.estilo-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.icono {
-  background-color: #8E8E8E;
-  transition: all 0.3s linear;
-  margin: 5px 5px 5px 5px;
-}
-.icono:hover {
-  background-color: #23A9E0;
-}
-
-.navegador {
+/* MAPAS */
+/*MIXINS*/
+/*HEADER*/
+header .navegador {
   background-color: #0E0D16;
 }
-
-.navegador-logo {
+header .navegador .container .navegador-logo {
   font-weight: 900;
   transition: all 0.3s linear;
 }
-.navegador-logo:hover {
+header .navegador .container .navegador-logo:hover {
+  color: #23A9E0 !important;
+}
+header .navegador .container .div-navegador ul li .enlace-nav {
+  color: #8E8E8E;
+  transition: all 0.3s linear;
+}
+header .navegador .container .div-navegador ul li .enlace-nav:hover {
   color: #23A9E0 !important;
 }
 
-.parrafo {
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
+/*EXTENDS*/
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+  display: flex;
+  justify-content: center;
 }
 
-.pie {
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
+  color: #23A9E0;
+}
+
+/*MIXINS*/
+/* MAPAS */
+/*FOOTER*/
+footer .pie {
   position: absolute;
   padding: 70px;
   background-color: #0E0D16;
 }
-
-.titulo1 {
-  color: #23A9E0;
-  font-size: 30px;
+footer .pie .titulo2 {
   font-weight: 600;
+  font-size: 20px;
+  color: white;
 }
-
-.titulo2 {
-  color: #23A9E0;
-  font-size: 22px;
-  font-weight: 600;
+footer .pie .titulo3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
 }
-
-/** MOBILE **/
 @media (max-width: 576px) {
-  .navegador-logo {
-    margin-left: 3%;
-  }
-
-  .contenedor-flex {
-    display: flex;
-    justify-content: center;
-  }
-
-  .titulo1 {
-    text-align: center;
-    margin: 10px 0;
-    font-size: 20px;
-  }
-
-  .parrafo {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .enlace {
-    display: flex;
-    justify-content: center;
+  footer .pie .titulo3 {
+    margin-top: 15px;
+    margin-bottom: 0px;
   }
 }
-/** TABLET **/
-@media (min-width: 576px) and (max-width: 992px) {
-  .navegador-logo {
-    margin-left: 3%;
+footer .pie .estilo-ul {
+  padding: 0;
+}
+@media (max-width: 576px) {
+  footer .pie .estilo-ul .icono {
+    background-color: #23A9E0;
   }
-
-  .titulo1 {
-    text-align: center;
-    margin: 10px 0;
-    font-size: 25px;
+}
+footer .pie .icono {
+  background-color: #8E8E8E;
+  transition: all 0.3s linear;
+  margin: 5px 5px 5px 5px;
+}
+footer .pie .icono:hover {
+  background-color: #23A9E0;
+}
+@media (max-width: 576px) {
+  footer .pie .icono {
+    background-color: #23A9E0;
   }
+}
 
-  .parrafo {
-    text-align: center;
+/*EXTENDS*/
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
+  color: #23A9E0;
+}
+
+/*MIXINS*/
+/*ESTILOS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  max-width: 100%;
+  list-style: none;
+}
+
+/*EXTENDS*/
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
+  color: #23A9E0;
+}
+
+/* MAPAS */
+/*MIXINS*/
+body {
+  background-color: #161725;
+}
+body .main-nosotros .contenedor-nosotros {
+  margin-top: 80px;
+}
+body .main-nosotros .contenedor-nosotros .espacio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .main-nosotros .contenedor-nosotros .espacio .titulo0 {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+body .main-nosotros .contenedor-nosotros .espacio .parrafo {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-nosotros .contenedor-nosotros .espacio .parrafo {
+    font-weight: 400;
     font-size: 18px;
-  }
-
-  .enlace {
+    color: white;
     display: flex;
     justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta {
+  border: solid 1px #23A9E0;
+  background-color: #0E0D16;
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .titulo-carta {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .parrafo-carta {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .parrafo-carta {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+  }
+}
+@media (max-width: 576px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-ubicacion .titulo1 {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .titulo1 {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .subtitulo {
+  font-weight: 400;
+  font-size: 20px;
+  color: #23A9E0;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .horario {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+/*ESTILOS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  max-width: 100%;
+  list-style: none;
+}
+
+/*EXTENDS*/
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover {
+  color: #23A9E0;
+}
+
+/* MAPAS */
+/*MIXINS*/
+/*EXTENDS*/
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover {
+  color: #23A9E0;
+}
+
+/* MAPAS */
+/*MIXINS*/
+/*HEADER*/
+header .navegador {
+  background-color: #0E0D16;
+}
+header .navegador .container .navegador-logo {
+  font-weight: 900;
+  transition: all 0.3s linear;
+}
+header .navegador .container .navegador-logo:hover {
+  color: #23A9E0 !important;
+}
+header .navegador .container .div-navegador ul li .enlace-nav {
+  color: #8E8E8E;
+  transition: all 0.3s linear;
+}
+header .navegador .container .div-navegador ul li .enlace-nav:hover {
+  color: #23A9E0 !important;
+}
+
+body {
+  background-color: #161725;
+}
+body .main-quecreemos .contenedor-quecreemos {
+  margin-top: 80px;
+}
+body .main-quecreemos .contenedor-quecreemos .espacio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .main-quecreemos .contenedor-quecreemos .espacio .titulo0 {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina {
+  background-color: #0E0D16;
+}
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .titulo-doctrina {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+body .main-quecreemos .contenedor-quecreemos .espacio .parrafo {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio .parrafo {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/*ESTILOS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  max-width: 100%;
+  list-style: none;
+}
+
+/*EXTENDS*/
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+  color: #23A9E0;
+}
+
+/* MAPAS */
+/*MIXINS*/
+/*EXTENDS*/
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+  color: #23A9E0;
+}
+
+/* MAPAS */
+/*MIXINS*/
+/*HEADER*/
+header .navegador {
+  background-color: #0E0D16;
+}
+header .navegador .container .navegador-logo {
+  font-weight: 900;
+  transition: all 0.3s linear;
+}
+header .navegador .container .navegador-logo:hover {
+  color: #23A9E0 !important;
+}
+header .navegador .container .div-navegador ul li .enlace-nav {
+  color: #8E8E8E;
+  transition: all 0.3s linear;
+}
+header .navegador .container .div-navegador ul li .enlace-nav:hover {
+  color: #23A9E0 !important;
+}
+
+body {
+  background-color: #161725;
+}
+body .main-media .contenedor-media {
+  margin-top: 80px;
+}
+body .main-media .contenedor-media .espacio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .main-media .contenedor-media .espacio .titulo0 {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+body .main-media .contenedor-media .espacio .parrafo {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-media .contenedor-media .espacio .parrafo {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media {
+  background-color: #0E0D16;
+}
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .titulo-media {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .parrafo-media {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-media .contenedor-media .espacio .contenedor-descripcion-media {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  body .main-media .contenedor-media .espacio .contenedor-spotify-media {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  body .main-media .contenedor-media .espacio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/*ESTILOS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  max-width: 100%;
+  list-style: none;
+}
+
+/*EXTENDS*/
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword, body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+  color: #23A9E0;
+}
+
+/* MAPAS */
+/*MIXINS*/
+/*EXTENDS*/
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .keyword, body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .keyword {
+  background-color: #23A9E0;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+  color: #23A9E0;
+}
+
+/* MAPAS */
+/*MIXINS*/
+/*HEADER*/
+header .navegador {
+  background-color: #0E0D16;
+}
+header .navegador .container .navegador-logo {
+  font-weight: 900;
+  transition: all 0.3s linear;
+}
+header .navegador .container .navegador-logo:hover {
+  color: #23A9E0 !important;
+}
+header .navegador .container .div-navegador ul li .enlace-nav {
+  color: #8E8E8E;
+  transition: all 0.3s linear;
+}
+header .navegador .container .div-navegador ul li .enlace-nav:hover {
+  color: #23A9E0 !important;
+}
+
+body {
+  background-color: #161725;
+}
+body .main-contacto .contenedor-contacto {
+  margin-top: 80px;
+}
+body .main-contacto .contenedor-contacto .espacio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .main-contacto .contenedor-contacto .espacio .titulo0 {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+body .main-contacto .contenedor-contacto .espacio .parrafo {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-contacto .contenedor-contacto .espacio .parrafo {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+body .main-contacto .contenedor-contacto .espacio .formulario .campo {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-contacto .contenedor-contacto .espacio .formulario .campo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+body .main-contacto .contenedor-contacto .espacio .formulario .aclaracion {
+  font-weight: 400;
+  font-size: 15px;
+  color: #8E8E8E;
+}
+@media (max-width: 576px) {
+  body .main-contacto .contenedor-contacto .espacio .formulario .aclaracion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+body .main-contacto .contenedor-contacto .espacio .formulario .boton-enviar {
+  background-color: #8E8E8E;
+  color: white;
+  transition: all 0.3s linear;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+body .main-contacto .contenedor-contacto .espacio .formulario .boton-enviar:hover {
+  background-color: #23A9E0;
+}
+@media (max-width: 576px) {
+  body .main-contacto .contenedor-contacto .espacio .formulario .boton-enviar {
+    background-color: #23A9E0;
+  }
+}
+
+body {
+  background-color: #161725;
+}
+body .main-index .contenedor-index {
+  margin-top: 60px;
+}
+body .main-index .contenedor-index .espacio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  body .main-index .contenedor-index .espacio .contenedor-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+body .main-index .contenedor-index .espacio .titulo1 {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-index .contenedor-index .espacio .titulo1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+body .main-index .contenedor-index .espacio .parrafo {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-index .contenedor-index .espacio .parrafo {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  body .main-index .contenedor-index .espacio .enlace {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    color: #23A9E0;
   }
 }
 

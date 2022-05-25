@@ -1,5 +1,8 @@
 @import '../base/variables';
 @import '../base/lista';
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/mapas';
 
 /*FOOTER*/
 
@@ -8,19 +11,53 @@ footer {
         position: absolute;
         padding: 70px;
         background-color: nth($colores, 1);
-    }
 
-    .icono {
-        background-color: nth($colores, 3);
-        transition: $transicion;
-        margin: 5px 5px 5px 5px;
-        &:hover {
-            background-color: nth($colores, 2);
+        .titulo2 {
+            @include texto(600, 20px, white);
         }
+
+        .titulo3 {
+            color: map-get($titulo-alt, ta-color);
+            font-size: map-get($titulo-alt, ta-tam);
+            font-weight: map-get($titulo-alt, ta-ancho);
+        }
+
+        @media (max-width: 576px) {
+            .titulo3 {
+                @include margen(15px, 0px);
+            }
+        }
+
+        .estilo-ul {
+            padding: 0;
+
+            .enlace {
+                @extend %enlace;
+            }
+
+            @media (max-width: 576px) {
+                .icono {
+                    background-color: nth($colores, 2);
+                }
+            }
+        }
+
+        .icono {
+            background-color: nth($colores, 3);
+            transition: $transicion;
+            margin: 5px 5px 5px 5px;
+
+            &:hover {
+                background-color: nth($colores, 2);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .icono {
+                background-color: nth($colores, 2);
+            }
+        }
+
     }
 
-    .estilo-ul{
-        list-style: none;
-        padding: 0;
-    }
 }
