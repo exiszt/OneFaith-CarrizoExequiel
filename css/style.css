@@ -10,7 +10,7 @@
 }
 
 /*EXTENDS*/
-body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -24,11 +24,11 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover {
   color: #23A9E0;
 }
 
@@ -54,7 +54,7 @@ header .navegador .container .div-navegador ul li .enlace-nav:hover {
 }
 
 /*EXTENDS*/
-body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -68,11 +68,11 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover {
   color: #23A9E0;
 }
 
@@ -104,8 +104,23 @@ footer .pie .estilo-ul {
   padding: 0;
 }
 @media (max-width: 576px) {
-  footer .pie .estilo-ul .icono {
-    background-color: #23A9E0;
+  footer .pie .estilo-ul .enlace {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    color: #23A9E0 !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  footer .pie .estilo-ul .enlace {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    color: #23A9E0 !important;
   }
 }
 footer .pie .icono {
@@ -121,9 +136,14 @@ footer .pie .icono:hover {
     background-color: #23A9E0;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  footer .pie .icono {
+    background-color: #23A9E0;
+  }
+}
 
 /*EXTENDS*/
-body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -137,11 +157,11 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover {
   color: #23A9E0;
 }
 
@@ -157,7 +177,7 @@ body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos
 }
 
 /*EXTENDS*/
-body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -171,11 +191,11 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, body .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, footer .pie .estilo-ul .enlace {
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, body .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, footer .pie .estilo-ul .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover {
   color: #23A9E0;
 }
 
@@ -198,13 +218,24 @@ body .main-nosotros .contenedor-nosotros .espacio .titulo0 {
 }
 body .main-nosotros .contenedor-nosotros .espacio .parrafo {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
 }
 @media (max-width: 576px) {
   body .main-nosotros .contenedor-nosotros .espacio .parrafo {
     font-weight: 400;
     font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-nosotros .contenedor-nosotros .espacio .parrafo {
+    font-weight: 400;
+    font-size: 20px;
     color: white;
     display: flex;
     justify-content: center;
@@ -221,15 +252,36 @@ body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta
   font-size: 20px;
   color: white;
 }
+@media (max-width: 576px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .titulo-carta {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .titulo-carta {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+}
 body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .parrafo-carta {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: white;
 }
 @media (max-width: 576px) {
   body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .parrafo-carta {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .parrafo-carta {
+    font-weight: 400;
+    font-size: 16px;
     color: white;
   }
 }
@@ -242,20 +294,64 @@ body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta
     margin-bottom: 25px;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta {
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+}
 body .main-nosotros .contenedor-nosotros .espacio .contenedor-ubicacion .titulo1 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   color: white;
+}
+@media (max-width: 576px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-ubicacion .titulo1 {
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-ubicacion .titulo1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+body .main-nosotros .contenedor-nosotros .espacio .contenedor-ubicacion .ratio {
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .titulo1 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   color: white;
-  margin-top: 20px;
-  margin-bottom: 0px;
+}
+@media (max-width: 576px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .titulo1 {
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .titulo1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
 }
 body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .subtitulo {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   color: #23A9E0;
   margin-top: 20px;
@@ -266,6 +362,7 @@ body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .horario 
   font-size: 18px;
   color: white;
 }
+
 /*ESTILOS GENERALES*/
 * {
   margin: 0;
@@ -277,7 +374,7 @@ body .main-nosotros .contenedor-nosotros .espacio .contenedor-horarios .horario 
 }
 
 /*EXTENDS*/
-body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -291,18 +388,18 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace {
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover {
   color: #23A9E0;
 }
 
 /* MAPAS */
 /*MIXINS*/
 /*EXTENDS*/
-body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -316,11 +413,11 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace {
+body .main-index .contenedor-index .espacio .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace, footer .pie .estilo-ul .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover {
   color: #23A9E0;
 }
 
@@ -369,12 +466,45 @@ body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja
 }
 body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .titulo-doctrina {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
   color: white;
+}
+@media (max-width: 576px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .titulo-doctrina {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .titulo-doctrina {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+}
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .parrafo-doctrina {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .parrafo-doctrina {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja-doctrina .card-body .parrafo-doctrina {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+  }
 }
 body .main-quecreemos .contenedor-quecreemos .espacio .parrafo {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
 }
 @media (max-width: 576px) {
@@ -388,7 +518,24 @@ body .main-quecreemos .contenedor-quecreemos .espacio .parrafo {
     text-align: center;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio .parrafo {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
+  body .main-quecreemos .contenedor-quecreemos .espacio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
   body .main-quecreemos .contenedor-quecreemos .espacio {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -406,7 +553,7 @@ body .main-quecreemos .contenedor-quecreemos .espacio .parrafo {
 }
 
 /*EXTENDS*/
-body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -420,18 +567,18 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
   color: #23A9E0;
 }
 
 /* MAPAS */
 /*MIXINS*/
 /*EXTENDS*/
-body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -445,11 +592,11 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
   color: #23A9E0;
 }
 
@@ -491,7 +638,7 @@ body .main-media .contenedor-media .espacio .titulo0 {
 }
 body .main-media .contenedor-media .espacio .parrafo {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
 }
 @media (max-width: 576px) {
@@ -505,33 +652,80 @@ body .main-media .contenedor-media .espacio .parrafo {
     text-align: center;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-media .contenedor-media .espacio .parrafo {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
 body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media {
   background-color: #0E0D16;
 }
 body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .titulo-media {
   font-weight: 600;
-  font-size: 20px;
-  color: white;
-}
-body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .parrafo-media {
-  font-weight: 400;
-  font-size: 15px;
+  font-size: 22px;
   color: white;
 }
 @media (max-width: 576px) {
-  body .main-media .contenedor-media .espacio .contenedor-descripcion-media {
-    margin-top: 0px;
-    margin-bottom: 10px;
+  body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .titulo-media {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
   }
-  body .main-media .contenedor-media .espacio .contenedor-spotify-media {
-    margin-top: 0px;
-    margin-bottom: 20px;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .titulo-media {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+}
+body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .parrafo-media {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 576px) {
+  body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .parrafo-media {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-media .card-body .parrafo-media {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
   }
 }
 @media (max-width: 576px) {
   body .main-media .contenedor-media .espacio {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-media .contenedor-media .espacio {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 576px) {
+  body .main-media .contenedor-media .contenedor-spotify-media {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-media .contenedor-media .contenedor-spotify-media {
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
 
@@ -546,7 +740,7 @@ body .main-media .contenedor-media .espacio .contenedor-descripcion-media .caja-
 }
 
 /*EXTENDS*/
-body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -560,18 +754,18 @@ body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
   color: #23A9E0;
 }
 
 /* MAPAS */
 /*MIXINS*/
 /*EXTENDS*/
-body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
+body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina {
   display: flex;
   justify-content: center;
 }
@@ -585,11 +779,11 @@ body .main-quecreemos .contenedor-quecreemos .espacio .contenedor-doctrina .caja
   padding: 2px 10px;
 }
 
-body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta, body .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
+body .main-index .contenedor-index .espacio .enlace, footer .pie .estilo-ul .enlace, body .main-quecreemos .contenedor-quecreemos .espacio .enlace {
   text-decoration: none;
   color: #8E8E8E;
 }
-body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-nosotros .contenedor-nosotros .espacio .contenedor-carta .borde-carta .boton-carta:hover, body .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
+body .main-index .contenedor-index .espacio .enlace:hover, footer .pie .estilo-ul .enlace:hover, body .main-quecreemos .contenedor-quecreemos .espacio .enlace:hover {
   color: #23A9E0;
 }
 
@@ -631,13 +825,24 @@ body .main-contacto .contenedor-contacto .espacio .titulo0 {
 }
 body .main-contacto .contenedor-contacto .espacio .parrafo {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
 }
 @media (max-width: 576px) {
   body .main-contacto .contenedor-contacto .espacio .parrafo {
     font-weight: 400;
     font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-contacto .contenedor-contacto .espacio .parrafo {
+    font-weight: 400;
+    font-size: 20px;
     color: white;
     display: flex;
     justify-content: center;
@@ -657,12 +862,26 @@ body .main-contacto .contenedor-contacto .espacio .formulario .campo {
     width: 100%;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-contacto .contenedor-contacto .espacio .formulario .campo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
 body .main-contacto .contenedor-contacto .espacio .formulario .aclaracion {
   font-weight: 400;
   font-size: 15px;
   color: #8E8E8E;
 }
 @media (max-width: 576px) {
+  body .main-contacto .contenedor-contacto .espacio .formulario .aclaracion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
   body .main-contacto .contenedor-contacto .espacio .formulario .aclaracion {
     display: flex;
     justify-content: center;
@@ -705,6 +924,13 @@ body .main-index .contenedor-index .espacio {
     width: 100%;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-index .contenedor-index .espacio .contenedor-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
 body .main-index .contenedor-index .espacio .titulo1 {
   font-weight: 600;
   font-size: 25px;
@@ -714,6 +940,18 @@ body .main-index .contenedor-index .espacio .titulo1 {
   body .main-index .contenedor-index .espacio .titulo1 {
     font-weight: 600;
     font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-index .contenedor-index .espacio .titulo1 {
+    font-weight: 600;
+    font-size: 26px;
     color: white;
     display: flex;
     justify-content: center;
@@ -738,6 +976,17 @@ body .main-index .contenedor-index .espacio .parrafo {
     text-align: center;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-index .contenedor-index .espacio .parrafo {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   body .main-index .contenedor-index .espacio .enlace {
     display: flex;
@@ -745,6 +994,16 @@ body .main-index .contenedor-index .espacio .parrafo {
     width: 100%;
     font-weight: 600;
     font-size: 18px;
+    color: #23A9E0;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body .main-index .contenedor-index .espacio .enlace {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
     color: #23A9E0;
   }
 }

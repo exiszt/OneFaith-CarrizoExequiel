@@ -17,7 +17,7 @@ body {
                 @include margen(20px, 20px);
 
                 .titulo0 {
-                    @include texto(600, 30px, white);
+                    @include texto(600, 30px, nth($colores, 4));
 
                 }
 
@@ -30,11 +30,39 @@ body {
 
                         .card-body {
                             .titulo-doctrina {
-                                @include texto(600, 20px, white);
+                                @include texto(600, 22px, nth($colores, 4));
+                            }
+
+                            @media (max-width: 576px) {
+                                .titulo-doctrina {
+                                    @include texto(600, 20px, nth($colores, 4));
+                                }
+                            }
+            
+                            @media (min-width: 576px) and (max-width: 992px) {
+                                .titulo-doctrina {
+                                    @include texto(600, 20px, nth($colores, 4));
+                                }
                             }
 
                             .keyword {
                                 @extend %palabra-descripcion;
+                            }
+
+                            .parrafo-doctrina {
+                                @include texto(400, 18px, nth($colores, 4));
+                            }
+
+                            @media (max-width: 576px) {
+                                .parrafo-doctrina {
+                                    @include texto(400, 18px, nth($colores, 4));
+                                }
+                            }
+            
+                            @media (min-width: 576px) and (max-width: 992px) {
+                                .parrafo-doctrina {
+                                    @include texto(400, 18px, nth($colores, 4));
+                                }
                             }
                         }
                     }
@@ -42,12 +70,20 @@ body {
                 }
 
                 .parrafo {
-                    @include texto(400, 16px, white)
+                    @include texto(400, 20px, nth($colores, 4));
                 }
 
                 @media (max-width: 576px) {
                     .parrafo {
                         @include texto(400, 18px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .parrafo {
+                        @include texto(400, 20px, nth($colores, 4));
                         @include display-mobile (flex, center, 100%);
                         text-align: center;
                     }
@@ -59,6 +95,12 @@ body {
             }
 
             @media (max-width: 576px) {
+                .espacio {
+                    @include margen(5px, 5px);
+                }
+            }
+
+            @media (min-width: 576px) and (max-width: 992px) {
                 .espacio {
                     @include margen(5px, 5px);
                 }

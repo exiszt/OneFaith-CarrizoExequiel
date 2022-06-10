@@ -28,14 +28,28 @@ body {
                     }
                 }
 
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .contenedor-flex {
+                        @include display-mobile(flex, center, 100%);
+                    }
+                }
+
                 .titulo1 {
-                    @include texto(600, 25px, white);
+                    @include texto(600, 25px, nth($colores, 4));
 
                 }
 
                 @media (max-width: 576px) {
                     .titulo1 {
                         @include texto(600, 24px, nth($colores, 4));
+                        @include display-mobile(flex, center, 100%);
+                        @include margen(10px, 10px);
+                    }
+                }
+
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .titulo1 {
+                        @include texto(600, 26px, nth($colores, 4));
                         @include display-mobile(flex, center, 100%);
                         @include margen(10px, 10px);
                     }
@@ -53,6 +67,14 @@ body {
                     }
                 }
 
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .parrafo {
+                        @include texto(400, 20px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
+
                 .enlace {
                     @extend %enlace;
                 }
@@ -61,6 +83,13 @@ body {
                     .enlace {
                         @include display-mobile(flex, center, 100%);
                         @include texto(600, 18px, nth($colores, 2));
+                    }
+                }
+
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .enlace {
+                        @include display-mobile(flex, center, 100%);
+                        @include texto(600, 20px, nth($colores, 2));
                     }
                 }
             }

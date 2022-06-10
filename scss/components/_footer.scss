@@ -13,7 +13,7 @@ footer {
         background-color: nth($colores, 1);
 
         .titulo2 {
-            @include texto(600, 20px, white);
+            @include texto(600, 20px, nth($colores, 4));
         }
 
         .titulo3 {
@@ -36,8 +36,16 @@ footer {
             }
 
             @media (max-width: 576px) {
-                .icono {
-                    background-color: nth($colores, 2);
+                .enlace {
+                    @include display-mobile(flex, center, 100%);
+                    @include texto(600, 16px, nth($colores, 2)!important);
+                }
+            }
+
+            @media (min-width: 576px) and (max-width: 992px) {
+                .enlace {
+                    @include display-mobile(flex, center, 100%);
+                    @include texto(600, 16px, nth($colores, 2)!important);
                 }
             }
         }
@@ -53,6 +61,12 @@ footer {
         }
 
         @media (max-width: 576px) {
+            .icono {
+                background-color: nth($colores, 2);
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 992px) {
             .icono {
                 background-color: nth($colores, 2);
             }

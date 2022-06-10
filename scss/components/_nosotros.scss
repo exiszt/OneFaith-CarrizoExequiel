@@ -16,16 +16,24 @@ body {
                 @include margen(20px, 20px);
 
                 .titulo0 {
-                    @include texto(600, 30px, white);
+                    @include texto(600, 30px, nth($colores, 4));
                 }
 
                 .parrafo {
-                    @include texto(400, 16px, white)
+                    @include texto(400, 20px, nth($colores, 4));
                 }
 
                 @media (max-width: 576px) {
                     .parrafo {
                         @include texto(400, 18px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .parrafo {
+                        @include texto(400, 20px, nth($colores, 4));
                         @include display-mobile (flex, center, 100%);
                         text-align: center;
                     }
@@ -38,22 +46,35 @@ body {
                         background-color: nth($colores, 1);
 
                         .titulo-carta {
-                            @include texto(600, 20px, white);
+                            @include texto(600, 20px, nth($colores, 4));
+                        }
+
+                        @media (max-width: 576px) {
+                            .titulo-carta {
+                                @include texto(600, 20px, nth($colores, 4));
+                            }
+                        }
+
+                        @media (min-width: 576px) and (max-width: 992px) {
+                            .titulo-carta {
+                                @include texto(600, 20px, nth($colores, 4));
+                            }
                         }
 
                         .parrafo-carta {
-                            @include texto(400, 15px, white);
+                            @include texto(400, 16px, nth($colores, 4));
                         }
 
                         @media (max-width: 576px) {
                             .parrafo-carta {
-                                @include texto(400, 20px, nth($colores, 4));
+                                @include texto(400, 18px, nth($colores, 4));
                             }
                         }
 
-                        .boton-carta {
-                            @extend %enlace;
-                            @extend %flex;
+                        @media (min-width: 576px) and (max-width: 992px) {
+                            .parrafo-carta {
+                                @include texto(400, 16px, nth($colores, 4));
+                            }
                         }
                     }
                 }
@@ -64,21 +85,59 @@ body {
                         @include margen (0px, 25px);
                     }
                 }
+
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .contenedor-carta {
+                        @include margen (0px, 25px);
+                    }
+                }
                     
                 .contenedor-ubicacion{
+                    
                     .titulo1{
-                        @include texto(600, 25px, nth($colores, 4));
+                        @include texto(600, 24px, nth($colores, 4));
+                    }
+
+                    @media (max-width: 576px) {
+                        .titulo1 {
+                            @include texto(600, 22px, nth($colores, 4));
+                            @include margen (0, 25px);
+                        }
+                    }
+
+                    @media (min-width: 576px) and (max-width: 992px) {
+                        .titulo1 {
+                            @include texto(600, 24px, nth($colores, 4));
+                            @include margen (0, 25px);
+                        }
+                    }
+
+                    .ratio{
+                        @include margen (25px, 0);
                     }
                 }
 
                 .contenedor-horarios{
                     .titulo1{
-                        @include texto(600, 25px, nth($colores, 4));
-                        @include margen(20px, 0px);
+                        @include texto(600, 24px, nth($colores, 4));
+                    }
+
+                    @media (max-width: 576px) {
+                        .titulo1 {
+                            @include texto(600, 22px, nth($colores, 4));
+                            @include margen (25px, 0);
+                        }
+                    }
+
+                    @media (min-width: 576px) and (max-width: 992px) {
+                        .titulo1 {
+                            @include texto(600, 24px, nth($colores, 4));
+                            @include margen (25px, 0);
+                        }
                     }
 
                     .subtitulo{
-                        @include texto(400, 20px, nth($colores, 2));
+                        @include texto(600, 20px, nth($colores, 2));
                         @include margen(20px, 0px);
                     }
 
@@ -88,11 +147,10 @@ body {
                 }
 
             }
+
         }
     }
 
-    .enlace {
-        @extend %enlace;
-    }
+
 
 }

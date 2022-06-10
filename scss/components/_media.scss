@@ -21,12 +21,20 @@ body {
                 }
 
                 .parrafo {
-                    @include texto(400, 16px, nth($colores, 4));
+                    @include texto(400, 20px, nth($colores, 4));
                 }
 
                 @media (max-width: 576px) {
                     .parrafo {
                         @include texto(400, 18px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .parrafo {
+                        @include texto(400, 20px, nth($colores, 4));
                         @include display-mobile (flex, center, 100%);
                         text-align: center;
                     }
@@ -38,27 +46,41 @@ body {
 
                         .card-body {
                             .titulo-media {
-                                @include texto(600, 20px, white);
+                                @include texto(600, 22px, nth($colores, 4));
+                            }
+
+                            @media (max-width: 576px) {
+                                .titulo-media {
+                                    @include texto(600, 20px, nth($colores, 4));
+                                }
+                            }
+
+                            @media (min-width: 576px) and (max-width: 992px) {
+                                .titulo-media {
+                                    @include texto(600, 20px, nth($colores, 4));
+                                }
                             }
 
                             .keyword {
                                 @extend %palabra-descripcion;
                             }
 
-                            .parrafo-media{
-                                @include texto(400, 15px, white);
+                            .parrafo-media {
+                                @include texto(400, 16px, nth($colores, 4));
+                            }
+
+                            @media (max-width: 576px) {
+                                .parrafo-media {
+                                    @include texto(400, 18px, nth($colores, 4));
+                                }
+                            }
+
+                            @media (min-width: 576px) and (max-width: 992px) {
+                                .parrafo-media {
+                                    @include texto(400, 18px, nth($colores, 4));
+                                }
                             }
                         }
-                    }
-                }
-
-                @media (max-width: 576px) {
-                    .contenedor-descripcion-media {
-                        @include margen(0px, 10px)
-                    }
-
-                    .contenedor-spotify-media{
-                        @include margen(0px, 20px);
                     }
                 }
 
@@ -66,7 +88,25 @@ body {
 
             @media (max-width: 576px) {
                 .espacio {
-                    @include margen(5px, 5px);
+                    @include margen(20px, 0px);
+                }
+            }
+
+            @media (min-width: 576px) and (max-width: 992px) {
+                .espacio {
+                    @include margen(25px, 25px);
+                }
+            }
+
+            @media (max-width: 576px) {
+                .contenedor-spotify-media {
+                    @include margen(10px, 0px);
+                }
+            }
+
+            @media (min-width: 576px) and (max-width: 992px) {
+                .contenedor-spotify-media {
+                    @include margen(10px, 0px);
                 }
             }
         }

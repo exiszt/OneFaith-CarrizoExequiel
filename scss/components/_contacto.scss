@@ -22,12 +22,20 @@ body {
                 }
 
                 .parrafo {
-                    @include texto(400, 16px, nth($colores, 4))
+                    @include texto(400, 20px, nth($colores, 4));
                 }
 
                 @media (max-width: 576px) {
                     .parrafo {
                         @include texto(400, 18px, nth($colores, 4));
+                        @include display-mobile (flex, center, 100%);
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 576px) and (max-width: 992px) {
+                    .parrafo {
+                        @include texto(400, 20px, nth($colores, 4));
                         @include display-mobile (flex, center, 100%);
                         text-align: center;
                     }
@@ -44,11 +52,23 @@ body {
                         }
                     }
 
+                    @media (min-width: 576px) and (max-width: 992px) {
+                        .campo {
+                            @include display-mobile (flex, center, 100%);
+                        }
+                    }
+
                     .aclaracion {
                         @include texto(400, 15px, nth($colores, 3));
                     }
 
                     @media (max-width: 576px) {
+                        .aclaracion {
+                            @include display-mobile (flex, center, 100%);
+                        }
+                    }
+
+                    @media (min-width: 576px) and (max-width: 992px) {
                         .aclaracion {
                             @include display-mobile (flex, center, 100%);
                         }
